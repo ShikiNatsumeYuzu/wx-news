@@ -1,0 +1,19 @@
+<!--components/top/top.wxml-->
+<scroll-view class="wrap" scroll-y="true" bindscrolltolower="newsTop">
+  <view wx:for="{{newsList}}" wx:for-item="it" wx:for-index="ind" wx:key="{{ind}}" bindtap="dateil">
+    <view class="news" wx:for="{{it}}" wx:key="{{index}}" data-id="{{item.newsId}}">
+      <view class="title" data-id="{{item.newsId}}">
+        <text data-id="{{item.newsId}}">{{item.title}}</text>
+      </view>
+      <view class="img" data-id="{{item.newsId}}">
+        <image wx:if="{{item.imgList.length>0}}" src="{{item.imgList[0]}}" data-id="{{item.newsId}}" mode="widthFix">
+        </image>
+      </view>
+      <view class="source-time" data-id="{{item.newsId}}">
+        <text data-id="{{item.newsId}}">{{item.source}}</text>
+        <text data-id="{{item.newsId}}">{{item.postTime}}</text>
+      </view>
+    </view>
+  </view>
+  <i-load-more tip="加载中" loading="{{ true }}" />
+</scroll-view>

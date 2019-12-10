@@ -1,0 +1,17 @@
+<!--pages/details/details.wxml-->
+<view class="wrap">
+  <text class="title">{{detail.title}}</text>
+  <view class="source-ptime">
+    <text>{{detail.source}}</text>
+    <text>{{detail.ptime}}</text>
+  </view>
+  <view wx:for="{{content}}" :key="{{index}}" class="content">
+    <view class="p">
+      <text>{{item}}</text>
+    </view>
+    <view class="img">
+      <image wx:if="{{detail.images.length>index}}" src="{{detail.images[index].imgSrc}}" mode="widthFix"></image>
+    </view>
+  </view>
+  <i-toast id="toast" />
+</view>

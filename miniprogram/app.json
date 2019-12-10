@@ -1,0 +1,42 @@
+{
+	"pages": [
+		"pages/news/news",
+		"pages/shipin/shipin",
+		"pages/me/me",
+		"pages/details/details"
+	],
+	"window": {
+		"backgroundColor": "#fff",
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "咸鱼新闻"
+	},
+	"sitemapLocation": "sitemap.json",
+	"style": "v2",
+	"tabBar": {
+		"color": "#000",
+		"selectedColor": "#1296db",
+		"backgroundColor": "#fff",
+		"list": [
+			{
+				"pagePath": "pages/news/news",
+				"text": "首页",
+				"iconPath": "/images/新闻.png",
+				"selectedIconPath": "/images/xinwen.png"
+			},
+			{
+				"pagePath": "pages/shipin/shipin",
+				"text": "视频",
+				"iconPath": "/images/视频.png",
+				"selectedIconPath": "/images/shipin.png"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"text": "我",
+				"iconPath": "/images/用户.png",
+				"selectedIconPath": "/images/yonghu.png"
+			}
+		]
+	}
+}

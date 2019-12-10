@@ -1,0 +1,46 @@
+<!--pages/news/news.wxml-->
+<i-tabs current="{{ current }}" scroll bindchange="handleChange" id="nav">
+  <i-tab wx:for="{{newsType}}" wx:key="index" key="{{index}}" title="{{item.typeName}}">
+  </i-tab>
+</i-tabs>
+<view class="wrap">
+  <view hidden="{{current!=0}}">
+    <top></top>
+  </view>
+  <view hidden="{{current!=1}}">
+    <yaowen></yaowen>
+  </view>
+  <view hidden="{{current!=2}}">
+    <caijing></caijing>
+  </view>
+  <view hidden="{{current!=3}}">
+    <keji></keji>
+  </view>
+  <view hidden="{{current!=4}}">
+    <junshi></junshi>
+  </view>
+  <view hidden="{{current!=5}}">
+    <shishang></shishang>
+  </view>
+  <view hidden="{{current!=6}}">
+    <nba></nba>
+  </view>
+  <view hidden="{{current!=7}}">
+    <gupiao></gupiao>
+  </view>
+  <view hidden="{{current!=8}}">
+    <youxi></youxi>
+  </view>
+  <view hidden="{{current!=9}}">
+    <jiankang></jiankang>
+  </view>
+  <view hidden="{{current!=10}}">
+    <zhifou></zhifou>
+  </view>
+  <view hidden="{{current!=11}}">
+    <tiyu></tiyu>
+  </view>
+  <view hidden="{{current!=12}}">
+    <yule></yule>
+  </view>
+</view>

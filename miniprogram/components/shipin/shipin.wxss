@@ -1,0 +1,39 @@
+/* components/shipin/shipin.wxss */
+
+.wrap {
+  margin-top: 85rpx;
+}
+
+.video {
+  padding: 20rpx;
+  border-top: 1px solid #ddd;
+}
+
+.wrap .title {
+  font-size: 35rpx;
+  letter-spacing: 3rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.news .title text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.video video {
+  width: 100%;
+  margin: 20rpx 0;
+  border-radius: 10rpx;
+}
+
+.video .source {
+  color: #6a6a6a;
+  font-size: 25rpx;
+}
+
+.video .title, .video .source {
+  line-height: normal;
+  font-weight: normal;
+}

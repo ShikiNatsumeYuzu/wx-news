@@ -1,0 +1,49 @@
+/* components/top/top.wxss */
+
+.wrap {
+  margin-top: 85rpx;
+  height: 1030rpx;
+}
+
+.news {
+  padding: 20rpx;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.news .title {
+  font-size: 35rpx;
+  letter-spacing: 3rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.news .title text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.news .img {
+  width: 100%;
+  margin: 20rpx 0;
+}
+
+.news .img image {
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 10rpx;
+}
+
+.news .source-time {
+  display: flex;
+  justify-content: space-between;
+  color: #6a6a6a;
+  font-size: 25rpx;
+}
+
+.news .title, .news .source-time text {
+  line-height: normal;
+  font-weight: normal;
+}

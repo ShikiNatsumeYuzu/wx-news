@@ -1,0 +1,15 @@
+<!--components/shipin/shipin.wxml-->
+<view class="wrap">
+  <view wx:for="{{newsList}}" wx:for-item="it" wx:for-index="ind">
+    <view wx:for="{{it}}" wx:key="{{index}}" hidden="{{item.videoList==null}}" class="video">
+      <view class="title">
+        <text>{{item.title}}</text>
+      </view>
+      <video src="{{item.videoList[0]}}" title="{{item.title}}"></video>
+      <view class="source">
+        <text>{{item.source}}</text>
+      </view>
+    </view>
+  </view>
+  <i-load-more tip="加载中" loading="{{ true }}" />
+</view>

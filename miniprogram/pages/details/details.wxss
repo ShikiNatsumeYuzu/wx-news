@@ -1,0 +1,46 @@
+/* pages/details/details.wxss */
+
+.wrap {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+
+.wrap .title {
+  display: block;
+  font-size: 45rpx;
+  margin-bottom: 40rpx;
+}
+
+.wrap .source-ptime {
+  display: flex;
+  justify-content: space-between;
+  font-size: 25rpx;
+  color: #6a6a6a;
+}
+
+.wrap .title, .wrap .source-ptime, .wrap .content .p {
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 3rpx;
+}
+
+.wrap .content{
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap .content .p {
+  margin: 50rpx 0;
+  font-size: 30rpx;
+}
+
+.wrap .content .img {
+  width: 100%;
+}
+
+.content .img image {
+  width: 100%;
+  vertical-align: middle;
+  border-radius: 10rpx;
+}

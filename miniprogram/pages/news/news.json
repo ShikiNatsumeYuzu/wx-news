@@ -1,0 +1,19 @@
+{
+  "usingComponents": {
+    "i-tabs": "../../dist/tabs/index",
+    "i-tab": "../../dist/tab/index",
+    "top":"/components/top/top",
+    "yaowen": "/components/yaowen/yaowen",
+    "caijing": "/components/caijing/caijing",
+    "keji": "/components/keji/keji",
+    "junshi": "/components/junshi/junshi",
+    "shishang": "/components/shishang/shishang",
+    "nba": "/components/nba/nba",
+    "gupiao": "/components/gupiao/gupiao",
+    "youxi": "/components/youxi/youxi",
+    "jiankang": "/components/jiankang/jiankang",
+    "zhifou": "/components/zhifou/zhifou",
+    "tiyu": "/components/tiyu/tiyu",
+    "yule": "/components/yule/yule"
+  }
+}
