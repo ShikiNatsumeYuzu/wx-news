@@ -5,7 +5,7 @@
     <text>{{detail.source}}</text>
     <text>{{detail.ptime}}</text>
   </view>
-  <view wx:for="{{content}}" wx:key="{{index}}" class="content">
+  <view wx:for="{{content}}" wx:key="index" class="content">
     <view class="p">
       <rich-text nodes="{{item}}"></rich-text>
     </view>
