@@ -43,4 +43,7 @@
   <view hidden="{{current!=12}}">
     <yule></yule>
   </view>
+  <view hidden="{{current!=13}}">
+    <redian></redian>
+  </view>
 </view>

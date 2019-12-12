@@ -32,7 +32,6 @@ Component({
         .then(res => {
           let rows = JSON.parse(res.result)
           let newsList = rows.data
-					console.log(newsList)
           this.setData({
             [`newsList[${this.data.newsList.length}]`]: newsList,
             page: this.data.page + 1

@@ -1,8 +1,8 @@
 /* components/top/top.wxss */
 
 .wrap {
-  margin-top: 85rpx;
-  height: 1030rpx;
+  margin-top: 8vh;
+  height: 92vh;
 }
 
 .news {

@@ -25,7 +25,7 @@ Component({
           name: "news",
           data: {
             code: 200,
-            typeId: 522,
+            typeId: 525,
             page: this.data.page
           }
         })
@@ -40,6 +40,13 @@ Component({
         .catch(err => {
           console.log(err)
         })
+    },
+    dateil(event) {
+      let id = event.target.dataset.id
+      let url = `/pages/details/details?id=${id}`
+      wx.navigateTo({
+        url
+      })
     }
   },
 

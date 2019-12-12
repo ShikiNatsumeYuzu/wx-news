@@ -1,4 +1,6 @@
-const { $Toast } = require('../dist/base/index.js');
+const {
+  $Toast
+} = require('../dist/base/index.js');
 // pages/details/details.js
 Page({
 
@@ -21,17 +23,17 @@ Page({
         }
       })
       .then(res => {
-        let rows = JSON.parse(res.result)
-        let content = rows.data.content
-        content = content.replace(/(&\w+;)/ig, "")
-        content = content.match(/[^>]+(?=<\/\w+>)/img)
+        let result = JSON.parse(res.result)
+        let content = result.data.content
+        content = content.split(/<!--IMG#\d+-->/ig)
         this.setData({
-          detail: rows.data,
+          detail: result.data,
           content
         })
       })
       .catch(err => {
         this.handleError()
+        console.log(err)
       })
   },
 

@@ -25,13 +25,13 @@
   letter-spacing: 3rpx;
 }
 
-.wrap .content{
+.wrap .content {
   display: flex;
   flex-direction: column;
 }
 
 .wrap .content .p {
-  margin: 50rpx 0;
+  margin: 40rpx 0;
   font-size: 30rpx;
 }
 

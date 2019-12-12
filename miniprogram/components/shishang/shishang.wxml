@@ -1,7 +1,7 @@
 <!--components/top/top.wxml-->
 <scroll-view class="wrap" scroll-y="true" bindscrolltolower="newsTop">
-  <view wx:for="{{newsList}}" wx:for-item="it" wx:for-index="ind" wx:key="{{ind}}" bindtap="dateil">
-    <view class="news" wx:for="{{it}}" wx:key="{{index}}" data-id="{{item.newsId}}">
+  <view wx:for="{{newsList}}" wx:for-item="it" wx:for-index="ind" wx:key="ind" bindtap="dateil">
+    <view class="news" wx:for="{{it}}" wx:key="index" data-id="{{item.newsId}}">
       <view class="title" data-id="{{item.newsId}}">
         <text data-id="{{item.newsId}}">{{item.title}}</text>
       </view>

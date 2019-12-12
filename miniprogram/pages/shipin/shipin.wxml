@@ -1,2 +1,8 @@
 <!--pages/shipin/shipin.wxml-->
-<text>pages/shipin/shipin.wxml</text>
+<view class="wrap">
+  <view wx:for="{{videoList}}" wx:for-index="ind" wx:for-item="it" wx:key="ind">
+    <view class="video" wx:for="{{it}}" wx:key="index">
+      <video title="{{item.title}}" src="{{item.videoList[0]}}"></video>
+    </view>
+  </view>
+</view>
