@@ -1,8 +1,7 @@
 <!--pages/shipin/shipin.wxml-->
-<view class="wrap">
-  <view wx:for="{{videoList}}" wx:for-index="ind" wx:for-item="it" wx:key="ind">
-    <view class="video" wx:for="{{it}}" wx:key="index">
-      <video title="{{item.title}}" src="{{item.videoList[0]}}"></video>
-    </view>
-  </view>
-</view>
+<swiper class="continer" vertical="true">
+  <swiper-item wx:for="{{videoList}}" wx:key="index">
+    <text class="wrap">{{item.title}}</text>
+    <video src="{{item.videoList[0]}}" object-fit="fill"></video>
+  </swiper-item>
+</swiper>

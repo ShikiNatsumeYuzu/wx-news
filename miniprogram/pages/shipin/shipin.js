@@ -21,12 +21,10 @@ Page({
       })
       .then(res => {
         let result = JSON.parse(res.result)
-        let videoList = result.data
         this.setData({
-          [`videoList[${this.data.videoList.length}]`]: videoList,
+          videoList: result.data,
           page: this.data.page + 1
         })
-        console.log(this.data.videoList)
       })
       .catch(err => {
         console.log(err)
